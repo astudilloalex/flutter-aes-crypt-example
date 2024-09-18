@@ -1,4 +1,3 @@
 enum AesModeEnum {
-  gcm,
-  cbc,
+  gcm
 }

@@ -68,10 +68,6 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: DropdownButtonFormField<PaddingEnum>(
                 items: [
-                  const DropdownMenuItem(
-                    value: null,
-                    child: const Text('No padding'),
-                  ),
                   ...PaddingEnum.values.map(
                     (e) {
                       return DropdownMenuItem(

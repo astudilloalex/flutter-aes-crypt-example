@@ -23,8 +23,6 @@ class AesCryptService {
     switch (mode) {
       case AesModeEnum.gcm:
         return _encryptWithAESGCM(phrase: key, plainText: plainText);
-      case AesModeEnum.cbc:
-        return _encryptWithAESCBC(phrase: key, plainText: plainText);
       default:
         throw UnimplementedError('Not implemented mode');
     }
@@ -39,8 +37,6 @@ class AesCryptService {
     switch (mode) {
       case AesModeEnum.gcm:
         return _decryptFromAESGCM(phrase: key, cipherText: cipherText);
-      case AesModeEnum.cbc:
-        return _decryptFromAESCBC(phrase: key, cipherText: cipherText);
       default:
         throw UnimplementedError('Not implemented mode');
     }

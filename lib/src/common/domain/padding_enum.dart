@@ -1,3 +1,3 @@
 enum PaddingEnum {
-  pkcs7,
+  noPadding,
 }
